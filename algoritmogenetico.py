@@ -32,8 +32,7 @@ def melhorIndividuo(populacao):
 
 def arquivos():
 
-    nome_do_arquivo=input('digite o nome do arquvio: ')
-    f = open(f'{nome_do_arquivo}.txt','r')
+    f = open(f'matriz.txt','r')
     a = f.readlines()
     tamanho_matriz=(int(a[0][0]),int(a[0][2]))
     a.pop(0)

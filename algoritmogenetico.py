@@ -119,7 +119,7 @@ def filhos(individuo):
     if ismutado:
         a = random.randrange(0,len(individuo)-2)
         b = random.randrange(0,len(individuo)-2)
-        filho[a],filho[b],filho[b],filho[a]
+        filho[a],filho[b]=filho[b],filho[a]
 
     
     return filho

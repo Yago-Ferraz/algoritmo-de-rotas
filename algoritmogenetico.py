@@ -115,7 +115,7 @@ def filhos(individuo):
     filho = [i for i in individuo]
     genea = random.randrange(0,len(individuo)-2)
     geneb = random.randrange(0,len(individuo)-2)
-    filho[genea],filho[geneb],filho[geneb],filho[genea]
+    filho[genea],filho[geneb]=filho[geneb],filho[genea]
     if ismutado:
         a = random.randrange(0,len(individuo)-2)
         b = random.randrange(0,len(individuo)-2)
